@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
+import { MyLayout } from "./components/Layout/Layout";
 import * as actions from "./redux/actions/authAction";
 
 const App = (props) => {
@@ -7,7 +8,7 @@ const App = (props) => {
     props.onTryAutoSignup();
   }, [props]);
 
-  return <div>App</div>;
+  return <MyLayout></MyLayout>;
 };
 
 const mapStateToProps = (state) => {
